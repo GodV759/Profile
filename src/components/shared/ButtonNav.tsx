@@ -5,7 +5,9 @@ type Props = {
 };
 
 const ButtonNav = (props: Props) => {
-  return <div className="flex items-center justify-center"></div>;
+  return (
+    <div className="flex items-center justify-center">{props.content}</div>
+  );
 };
 
 export default ButtonNav;
