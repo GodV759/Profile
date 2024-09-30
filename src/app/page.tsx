@@ -7,7 +7,9 @@ import WrapperPage from "@/components/shared/WrapperPage";
 import { Separator } from "@/components/ui/separator";
 import { item, wrap } from "@/lib/utils";
 import { motion } from "framer-motion";
+import { useTheme } from "next-themes";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 const LazyVoxelDog = dynamic(() => import("../components/shared/voxel-dog"), {
   ssr: false,
@@ -15,6 +17,9 @@ const LazyVoxelDog = dynamic(() => import("../components/shared/voxel-dog"), {
 });
 
 export default function Home() {
+  const { theme } = useTheme();
+  console.log("theme", theme);
+
   return (
     <WrapperPage className="gap-4">
       <motion.div
@@ -59,6 +64,19 @@ export default function Home() {
       </motion.ul>
       <Separator className="w-[150px]" />
       <LazyVoxelDog />
+      <blockquote className="text-custom-base-regular italic text-t-secondary xs:mt-7 md:mt-10 lg:mt-20">
+        Oh no! Mr. Snake eats my contributions!!!
+      </blockquote>
+      <Image
+        src={
+          theme === "light"
+            ? "https://raw.githubusercontent.com/GodV759/GodV759/4c00477a0e898f35ab9766faed51f38d6fe3507d/github-contribution-grid-snake.svg"
+            : "https://raw.githubusercontent.com/GodV759/GodV759/4c00477a0e898f35ab9766faed51f38d6fe3507d/github-contribution-grid-snake-dark.svg"
+        }
+        alt=""
+        width={880}
+        height={192}
+      />
     </WrapperPage>
   );
 }
