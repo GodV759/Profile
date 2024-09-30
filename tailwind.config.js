@@ -21,6 +21,7 @@ const config = {
       colors: {
         "t-primary": "var(--text-t-primary)",
         "t-secondary": "var(--text-t-secondary)",
+        "color-icon": "var(--color-icon)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -124,7 +125,7 @@ const config = {
         ".text-custom-sm-regular": {
           fontFamily: "SF-Pro-Regular",
           fontSize: 14,
-          lineHeight: "20px",
+          lineHeight: "25px",
           fontWeight: 400,
         },
         ".text-custom-sm-medium": {

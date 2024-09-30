@@ -27,34 +27,6 @@
   font-weight: 700;
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --text-t-primary: #fff;
-  --text-t-secondary: #a0a0a0;
-}
-.bg-button {
-  background-image: linear-gradient(45deg, #f8f8f8, #e8e8e8, #f8f8f8, #e8e8e8);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #161616;
-    --foreground: #ededed;
-    --text-t-primary: #fff;
-    --text-t-secondary: #a0a0a0;
-  }
-  .bg-button {
-    background-image: linear-gradient(
-      45deg,
-      #1c1c1c,
-      #232323,
-      #1c1c1c,
-      #232323
-    );
-  }
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -88,10 +60,22 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    --text-t-primary: #171717;
+    --text-t-secondary: #6f6f6f;
+    --color-icon: #161616;
+    .bg-icon {
+      background-image: linear-gradient(
+        45deg,
+        #f8f8f8,
+        #e8e8e8,
+        #f8f8f8,
+        #e8e8e8
+      );
+    }
   }
 
   .dark {
-    --background: 20 14.3% 4.1%;
+    --background: #161616;
     --foreground: 60 9.1% 97.8%;
     --card: 20 14.3% 4.1%;
     --card-foreground: 60 9.1% 97.8%;
@@ -115,6 +99,18 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --text-t-primary: #fff;
+    --text-t-secondary: #a0a0a0;
+    --color-icon: #7e7e7e;
+    .bg-icon {
+      background-image: linear-gradient(
+        45deg,
+        #1c1c1c,
+        #232323,
+        #1c1c1c,
+        #232323
+      );
+    }
   }
 }
 
@@ -125,4 +121,21 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+body,
+html,
+a,
+p,
+h1,
+h2,
+h3,
+h5,
+h5,
+li,
+ul,
+ol,
+dl,
+dt,
+dd {
+  text-align: justify;
 }
