@@ -4,6 +4,7 @@ import InstagramIcon from "@/components/shared/icons/InstagramIcon";
 import XIcon from "@/components/shared/icons/XIcon";
 import VoxelDogLoader from "@/components/shared/voxel-dog-loader";
 import WrapperPage from "@/components/shared/WrapperPage";
+import TrackPlayer from "@/components/TrackPlayer";
 import { Separator } from "@/components/ui/separator";
 import { item, wrap } from "@/lib/utils";
 import { motion } from "framer-motion";
@@ -64,9 +65,9 @@ export default function Home() {
       </motion.ul>
       <Separator className="w-[150px]" />
       <LazyVoxelDog />
-      <blockquote className="text-custom-base-regular italic text-t-secondary xs:mt-7 md:mt-10 lg:mt-20">
+      <p className="text-custom-base-regular italic text-t-secondary">
         Oh no! Mr. Snake eats my contributions!!!
-      </blockquote>
+      </p>
       <Image
         src={
           theme === "light"
@@ -77,6 +78,10 @@ export default function Home() {
         width={880}
         height={192}
       />
+      <p className="text-custom-base-regular italic text-t-secondary">
+        My favorite song!
+      </p>
+      <TrackPlayer />
     </WrapperPage>
   );
 }

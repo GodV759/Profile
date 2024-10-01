@@ -56,7 +56,7 @@ const listNav = [
 
 const Nav = () => {
   return (
-    <div className="fixed z-10 bottom-3 flex w-[calc(100dvw-32px)] overflow-auto items-center max-w-[720px] border border-solid rounded-xl p-3 gap-3 opacity-100 bg-card">
+    <div className="fixed z-10 bottom-3 flex w-[calc(100dvw-32px)] overflow-auto items-center max-w-[720px] border border-solid border-border rounded-xl p-3 gap-3 opacity-100 bg-card">
       {listNav.map((e, index) => {
         return (
           <ButtonNav icon={e.icon} tooltip={e.name} key={index} href={e.href} />

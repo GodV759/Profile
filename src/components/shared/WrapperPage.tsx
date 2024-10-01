@@ -12,7 +12,7 @@ export default function WrapperPage({
   return (
     <div
       className={clsx(
-        "max-w-[720px] flex flex-col  w-full  overflow-auto h-[100dvh]  m-auto p-4 lg:pt-20",
+        "max-w-[720px] flex flex-col w-full h-full  m-auto p-4 lg:pt-20 mb-[100px]",
         {
           [className]: !!className,
         }

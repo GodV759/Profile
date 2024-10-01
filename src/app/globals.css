@@ -51,7 +51,7 @@
     --accent-foreground: 24 9.8% 10%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 60 9.1% 97.8%;
-    --border: #e5e7eb;
+    --border: 220, 13%, 91%;
     --input: 20 5.9% 90%;
     --ring: 20 14.3% 4.1%;
     --radius: 0.5rem;
@@ -75,7 +75,7 @@
   }
 
   .dark {
-    --background: #161616;
+    --background: 0, 0%, 9%;
     --foreground: 60 9.1% 97.8%;
     --card: 20 14.3% 4.1%;
     --card-foreground: 60 9.1% 97.8%;
@@ -91,7 +91,7 @@
     --accent-foreground: 60 9.1% 97.8%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 60 9.1% 97.8%;
-    --border: #a0a0a0;
+    --border: 300, 1%, 17%;
     --input: 12 6.5% 15.1%;
     --ring: 24 5.7% 82.9%;
     --chart-1: 220 70% 50%;
@@ -135,4 +135,21 @@ dl,
 dt,
 dd {
   text-align: justify;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotating-image {
+  animation: rotate 12s linear infinite;
+}
+#rhap_current-time {
+  color: var(--text-t-primary);
+}
+.rhap_time {
+  color: var(--text-t-primary) !important;
 }

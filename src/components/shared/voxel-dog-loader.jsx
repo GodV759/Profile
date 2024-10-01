@@ -7,7 +7,7 @@ export const DogSpinner = () => (
 export const DogContainer = forwardRef(({ children }, ref) => (
   <div
     ref={ref}
-     className="voxel-dog relative mx-auto mt-[-20px] md:mt-[-60px] lg:mt-[-120px] mb-[-40px] md:mb-[-140px] lg:mb-[-200px] w-[280px] md:w-[480px] lg:w-[640px] h-[280px] md:h-[480px] lg:h-[640px]"
+     className="voxel-dog relative mx-auto mt-[-20px] md:mt-[-60px] lg:mt-[-120px] mb-[-40px] w-[280px] md:w-[480px] lg:w-[640px] h-[280px] md:h-[480px] lg:h-[640px]"
   >
     {children}
   </div>
