@@ -8,12 +8,12 @@ const variants = {
 export default function WrapperPage({
   children,
   className = "",
-  key = "",
-}: {
+}: // keyAnim,
+{
   children: React.ReactNode;
   className?: string;
   style?: React.CSSProperties;
-  key: string;
+  // keyAnim: string;
 }) {
   return (
     <motion.main
@@ -28,7 +28,7 @@ export default function WrapperPage({
           [className]: !!className,
         }
       )}
-      key={key}
+      // key={keyAnim}
     >
       {children}
     </motion.main>

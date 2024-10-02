@@ -22,7 +22,7 @@ export default function Home() {
   console.log("theme", theme);
 
   return (
-    <WrapperPage className="gap-4" key="Home">
+    <WrapperPage className="gap-4">
       <motion.div
         key="title-home"
         initial={{ opacity: 0, y: 50 }}

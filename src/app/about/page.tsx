@@ -7,7 +7,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <WrapperPage className="gap-4" key="About">
+    <WrapperPage
+      className="gap-4"
+      //keyAnim="About"
+    >
       <AnimatePresence mode="wait">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
