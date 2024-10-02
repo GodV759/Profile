@@ -31,7 +31,11 @@ const ButtonNav = (props: Props) => {
             whileTap={{ scale: 0.9 }}
             className="flex items-center justify-center bg-icon p-4 rounded-lg"
           >
-            <Link href={props.href} target="_blank" rel="noopener noreferrer">
+            <Link
+              href={props.href}
+              target={props.href.startsWith("https") ? "_blank" : "_self"}
+              rel="noopener noreferrer"
+            >
               {typeof props.icon === "string" ? (
                 <Image src={props.icon} alt="" width="24" height="24" />
               ) : (

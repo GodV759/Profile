@@ -22,6 +22,7 @@ const config = {
         "t-primary": "var(--text-t-primary)",
         "t-secondary": "var(--text-t-secondary)",
         "color-icon": "var(--color-icon)",
+        "active-icon": "var(--active-icon)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

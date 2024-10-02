@@ -62,7 +62,8 @@
     --chart-5: 27 87% 67%;
     --text-t-primary: #171717;
     --text-t-secondary: #6f6f6f;
-    --color-icon: #161616;
+    --color-icon: #7e7e7e;
+    --actice-icon: #161616;
     .bg-icon {
       background-image: linear-gradient(
         45deg,
@@ -102,6 +103,7 @@
     --text-t-primary: #fff;
     --text-t-secondary: #a0a0a0;
     --color-icon: #7e7e7e;
+    --active-icon: #fff;
     .bg-icon {
       background-image: linear-gradient(
         45deg,

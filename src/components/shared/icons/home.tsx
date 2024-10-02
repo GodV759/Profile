@@ -1,13 +1,14 @@
 import React from "react";
+import clsx from "clsx";
 
-const HomeIcon = () => {
+const HomeIcon = ({ className = "" }: { className?: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       width="512"
       height="512"
-      className={"w-6 h-6 text-color-icon"}
+      className={clsx("w-6 h-6 text-color-icon", { [className]: !!className })}
     >
       <g id="_01_align_center" data-name="01 align center">
         <path

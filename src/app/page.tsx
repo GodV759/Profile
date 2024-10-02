@@ -24,8 +24,10 @@ export default function Home() {
   return (
     <WrapperPage className="gap-4">
       <motion.div
+        key="title-home"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 50 }}
         transition={{ duration: 0.5 }}
         className="flex flex-col gap-2"
       >
@@ -36,8 +38,10 @@ export default function Home() {
       </motion.div>
       <Separator />
       <motion.p
+        key="p-home"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 50 }}
         transition={{ duration: 0.5, delay: 0.5 }}
         className="text-t-secondary text-custom-sm-regular text-justify"
       >
@@ -52,6 +56,7 @@ export default function Home() {
         className="flex gap-3 items-center"
         initial="hidden"
         animate="visible"
+        exit="hidden"
       >
         <motion.li variants={item}>
           <FacebookIcon />

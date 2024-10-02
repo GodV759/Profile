@@ -1,9 +1,10 @@
+import clsx from "clsx";
 import React from "react";
 
-const ImageIcon = () => {
+const ImageIcon = ({ className = "" }: { className?: string }) => {
   return (
     <svg
-      className="w-6 h-6 text-color-icon"
+      className={clsx("w-6 h-6 text-color-icon", { [className]: !!className })}
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
