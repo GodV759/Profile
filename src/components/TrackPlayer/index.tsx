@@ -23,7 +23,7 @@ const TrackPlayer = () => {
         </p>
         <ClientOnly>
           <AudioPlayer
-            autoPlay
+            //  autoPlay
             src="/tracks/BAND4BAND.mp3"
             style={{
               boxShadow: "none",
