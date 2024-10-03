@@ -6,9 +6,10 @@ import FrozenRoute from "./FrozenRoute";
 
 const PageAnimatePresence = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
+  console.log("pathname: ", pathname);
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence>
       {/**
        * We use `motion.div` as the first child of `<AnimatePresence />` Component so we can specify page animations at the page level.
        * The `motion.div` Component gets re-evaluated when the `key` prop updates, triggering the animation's lifecycles.
