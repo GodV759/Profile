@@ -1,3 +1,4 @@
+"use client";
 import { forwardRef } from 'react'
 import { LoadingSpinner } from './icons/Spinner'
 export const DogSpinner = () => (
