@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Nav from "@/components/Nav";
 import PageAnimatePresence from "@/components/HOC/PageAnimatePresence";
+import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   title: "Haladie",
   description: "Profile of Haladie",
@@ -24,10 +25,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <PageAnimatePresence>
-            {children}
-            <SpeedInsights />
-          </PageAnimatePresence>
+          <Analytics />
+          <SpeedInsights />
+          <PageAnimatePresence>{children}</PageAnimatePresence>
           <Nav />
         </ThemeProvider>
       </body>
